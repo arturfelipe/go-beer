@@ -21,6 +21,7 @@ func (s *BeerSuite) SetUpSuite(c *check.C) {
 }
 
 func (s *BeerSuite) TestBeerData(c *check.C) {
+	c.Check(s.beer.ID, check.Equals, "")
 	c.Check(s.beer.Name, check.Equals, "")
 	c.Check(s.beer.Description, check.Equals, "")
 	c.Check(s.beer.Style, check.Equals, "")

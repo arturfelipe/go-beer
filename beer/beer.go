@@ -2,8 +2,9 @@ package beer
 
 // Beer model
 type Beer struct {
-	Name        string
-	Description string
-	Style       string
-	Abv         int
+	ID          string `bson:"_id"`
+	Name        string `bson:"name"`
+	Description string `bson:"description"`
+	Style       string `bson:"style"`
+	Abv         int    `bson:"abv"`
 }
